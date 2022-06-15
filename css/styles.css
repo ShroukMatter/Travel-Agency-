@@ -1,0 +1,571 @@
+body{
+    margin: 0;
+    font-family:cursive;
+
+}
+
+.home-container{
+    height: 700px;
+    background: url("../images/b1.jpg") no-repeat right center/cover;
+}
+
+/******************************************* Navbar ***********************************************/
+nav{
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-family:cursive;
+}
+
+nav ul{
+    width: 700px;
+    list-style: none;
+    flex-wrap: nowrap;
+    margin:0;
+    padding: 0;
+    text-align: left;
+}
+nav ul li{
+    display: inline-block;
+    margin:0 20px;
+    line-height:80px;
+    font-size: 17px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color:rgb(255, 200, 0);
+
+
+}
+
+nav h1{
+    width: 700px;
+    margin:0 20px;
+    line-height:80px;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+
+  @media screen and (min-width:875px) and (max-width:1240px){
+  
+    nav ul li{
+        margin:0 5px;
+       
+    }
+    
+    nav h1{
+        margin:0 5px;
+        line-height:80px;
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+      
+  }
+
+
+@media screen and (min-width:320px) and (max-width:874px){
+  nav{
+      flex-direction: column;
+      justify-content: center;
+  }
+  nav ul{ 
+      width:100%;
+      text-align: center;
+  }
+  nav ul li{
+      display:block;
+      line-height :30px;
+      margin:40px;
+
+  }
+  nav h1{
+      width: 100%;
+      text-align: center;
+      line-height :30px;
+      margin-top: 30px;
+
+  }
+    
+}
+
+/******************************************* neasted divs ***********************************************/
+
+.nested-div{
+    width: 600px;
+    height: 350px;
+    background-color:transparent;
+    position: absolute;
+    left: 280px;
+    top: 250px;
+    overflow: hidden;
+
+} 
+.yellow-div{
+    height: 150px;
+    width: 330px;
+    border: 5px solid rgb(255, 255, 0);
+   
+}
+.white-div{
+    height: 130px;
+    width: 350px;
+    background-color:rgba(255, 255, 255, 0.943);
+    position: absolute;
+    left: 100px;
+    top: 90px;
+}
+.white-div h1{
+    color:rgba(0, 128, 58, 0.811);
+    margin-left:15px ;
+}
+.white-div h2{
+   margin-left: 10px;
+}
+@media screen and (min-width:320px) and (max-width:874px){
+    .nested-div{
+        display: none;
+    }
+}
+
+
+/******************************************* About us ***********************************************/
+
+.inner-about{
+    width: 100%;
+    min-height: 350px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flip-box{
+    width: 250px;
+    height: 300px;
+    margin: 25px 10px;
+    prefix: 1000px;
+    overflow: hidden;
+
+}
+.flip-box-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.8s;
+    transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-back {
+    background-color: #bbb;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.third-div{
+    font-size:15px;
+    padding:0 5px;
+}
+.third-div h2{
+    color:rgb(255, 200, 0);
+    font-size: 18px;
+}
+
+@media screen and (min-width:810px) and (max-width:1079px){
+
+    .flip-box{
+        width: 250px;
+        height: 300px;
+        margin: 25px 60px;
+    }
+}
+/******************************************* Find adventure section ***********************************************/
+
+.adventure-container{
+    width: 100%;
+    min-height: 400px;
+    background: url("../images/b3.jpg") no-repeat left center/cover;
+    overflow: hidden;
+}
+.adventure-h2 , .adventure-h3{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size:22px;
+}
+.adventure-h2{
+    color:rgb(255, 200, 0);
+}
+.inner-adventure{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.circled-div{
+    background-color:transparent;
+    border:2px solid #fff;
+    border-radius:100px;
+    width: 100px;
+    height: 100px;
+    margin:110px 10px;
+    text-align: center;
+    line-height:100px;
+    clip-path: circle(50%);
+    color:rgb(255, 200, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+@media screen and (min-width:320px) and (max-width:874px){
+    .circled-div{
+        margin:50px 50px;
+
+    }
+}
+
+
+/******************************************* Services section ***********************************************/
+.out-container{
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+}
+.out-container h2{
+    text-align: center;
+    color:rgb(255, 200, 0);
+    font-weight: bold;
+
+}
+.out-container h3{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.inner{
+    width: 70%;
+    height: 100%;
+}
+.square-div{
+    background-color:#fff;
+    width: 300px;
+    height:200px;
+    margin:15px auto;
+    box-shadow: 1px 1px 11px #bbb;
+}
+ .square-div h4{
+    color:rgba(0, 128, 58, 0.811);
+    margin-top:30px;
+    font-weight: bold;
+ }
+ .square-div p{
+    color:gray;
+    padding: 20px 5px;
+    
+ }
+
+ /******************************************* gallery2 section ***********************************************/
+.inner2 {
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-div {
+    min-height: 400px;
+    background: url("../images/ab4.jpg") no-repeat left center/cover;
+}
+.colored-div{
+    background-color: #bbb;
+    min-height: 400px;
+
+}
+.colored-div h3 {
+    color: #23bd07;
+    margin-top:90px; 
+    margin-left: 65px; 
+}
+.colored-div p{
+    color:rgba(255, 255, 255, 0.813);
+    margin-top:10px; 
+    margin-left: 65px; 
+}
+.green-square{
+    background-color:transparent;
+    width: 320px;
+    height: 157px;
+    border: 5px solid  #39FF14;
+    position: absolute;
+    top: 20px;
+    left: 700px;
+}
+@media screen and (min-width:320px) and (max-width:1440px){
+    .green-square{
+        display: none;
+    } 
+}
+@media screen and (min-width:320px) and (max-width:991px){
+    .colored-div{
+        width: 100%;
+    }
+    .left-div{
+        width: 100%;
+    }
+}
+ /******************************************* Gallery section ***********************************************/
+.gallery-container{
+    margin: 50px 0;
+    width: 100%;
+    min-height: 200px;
+}
+.gallery-container h2{
+    text-align: center;
+    color:rgb(255, 200, 0);
+
+}
+.gallery-container h3{
+    text-align: center;
+
+}
+
+.gallery-row{
+    margin:0 auto;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+}
+.imgs{
+    margin:  10px;
+    width: 200px;
+    height: 180px;
+}
+.gallery-img1{
+    
+    background:url(../images/g4.jpg) no-repeat top right/cover;
+}
+.gallery-img2{
+    
+    background:url(../images/g5.jpg) no-repeat top right/cover;
+}.gallery-img3{
+    margin: 10px;
+    width: 400px;
+    height: 180px;
+    background:url(../images/g6.jpg) no-repeat top center/cover;
+}
+.gallery-img4{
+    
+    background:url(../images/g3.jpg) no-repeat top right/cover;
+}
+.gallery-img5{
+    
+    background:url(../images/g2.jpg) no-repeat top right/cover;
+}.gallery-img6{
+    margin:  10px;
+    width: 400px;
+    height: 180px;
+    background:url(../images/ab4.jpg) no-repeat top center/cover;
+}
+
+ /******************************************* Gallery2 section ***********************************************/
+.container-fluid{
+    width: 100%;
+}
+.gray-div , .opposite-div1 , .opposite-div2{
+    min-height:400px;
+}
+.gray-div{
+    background-color: #bbb;
+}
+.opposite-div1{
+    background: url("../images/b4.jpg") no-repeat bottom left/cover;
+}
+.opposite-div2{
+    background: url("../images/g6.jpg") no-repeat top left/cover;
+}
+.gray-div h3 , .opposite-div1 h3 , .opposite-div2 h3{
+    color:#23bd07;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+.gray-div p , .opposite-div1 p , .opposite-div2 p{
+    color:#fff;
+    margin-top: 30px;
+    margin-left: 40px;
+
+}
+
+ /******************************************* Booking section ***********************************************/
+
+.booking-div h3{
+       text-align: center;
+       margin-top: 50px;
+}
+.h2-booking{
+    text-align: center;
+    color:rgb(255, 200, 0);
+    margin-bottom: 50px;
+
+}
+.booking-row{
+   
+    width: 100%;
+}
+.col-3{
+    width: 320px;
+    border: 5px solid #fff;
+    height: 240px;
+}
+.img1{
+    background: url("../images/d1.jpg") no-repeat right center/cover;
+}
+.img2{
+    background: url("../images/d2.jpg") no-repeat right center/cover;
+}.img3{
+    background: url("../images/d3.jpg") no-repeat right center/cover;
+}.img4{
+    background: url("../images/d4.jpg") no-repeat right center/cover;
+}
+
+.info-header{
+    padding: 10px 0;
+    color:rgb(255, 200, 0);
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.book-details{
+    display: flex;
+    justify-content:space-between;
+}
+.book{
+    color:#23bd07;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.price{
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.p-info{
+    color: rgb(204, 204, 204);
+}
+
+
+ /******************************************* Subscribe section ***********************************************/
+.subscribe-container
+{
+    background:url("../images/b4.jpg") no-repeat left center/cover;
+    min-height: 500px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.subscribe-heading{
+    text-align: center;
+    margin-top: 120px;
+    font-weight: bold;
+}
+.subscribe-heading2{
+    text-align: center;
+    color:rgb(255, 200, 0);
+    margin-bottom: 50px;
+    font-weight: bold;
+
+}
+
+.subscribe-form {
+    margin: 90px auto;
+    width:fit-content;
+    background-color:rgba(255, 255, 255, 0.881);
+    border: 20px solid rgba(255, 255, 255, 0.642);
+}
+input[type="submit"]{
+    color:#fff;
+    background-color:rgb(15, 170, 15);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+ /******************************************* contact section ***********************************************/
+.contact-container{
+    margin-bottom:50px;
+}
+
+ .map-div {
+    min-height:400px;
+    width: 550px;
+
+}
+iframe{
+    width: 100%;
+}
+.form-div {
+    min-height:400px;
+    width: 550px;
+}
+
+.form-div input{
+    margin:0 5PX 20px 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 8px;
+    height: 50px;
+
+}
+.form-div input[type="message"]{
+width: 100%;
+height: 230px;
+
+}
+.form-div input[type=submit]{
+    width: 100%;
+    background-color:rgb(15, 170, 15);
+    }
+.contact-heading{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.contact-heading2{
+    text-align: center;
+    color:rgb(255, 200, 0);
+    margin-bottom: 50px;
+    font-weight: bold;
+
+}
+ /******************************************* contact-info  section ***********************************************/
+.contact-info{
+    height: 400px;
+    background-color: rgb(64, 60, 60);
+    text-align: center;
+    color:#fff;
+    overflow: hidden;
+}
+span{
+    color: rgba(255, 255, 255, 0.669);
+}
+.inner-contact{
+    margin-top:200px;
+}
+marquee{
+    color:#fff;
+    background-color:#000;
+    height: 30px;
+    line-height: 30px;
+}
