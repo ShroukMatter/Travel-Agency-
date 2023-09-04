@@ -1,7 +1,7 @@
 #  responsive Adventure travel agency-Home-page
-Desktop Version             |  Mobile Version
-:-------------------------:|:-------------------------:
-![](images/desktopversion.png)  |  ![](images/mobileversion.png)
+Desktop Version             |  
+:-------------------------:|
+![](images/desktopversion.png) 
 
 <img align="left" width="650"
 src="[https://github.com/ShroukMatter/Travel-Agency-/blob/main/images/desktopversion.png]">
